@@ -23,7 +23,7 @@
 					class="tooltipped tooltipped-n tooltipped-no-touch"
 					aria-label="Sign in"><button
 						class="icon sign-in"
-						data-target="#sign-in"
+						data-target="SignIn"
 						aria-label="Sign in"
 						role="tab"
 						aria-controls="sign-in"
@@ -32,7 +32,7 @@
 					class="tooltipped tooltipped-n tooltipped-no-touch"
 					aria-label="Connect to network"><button
 						class="icon connect"
-						data-target="#connect"
+						data-target="Connect"
 						aria-label="Connect to network"
 						role="tab"
 						aria-controls="connect"
@@ -41,7 +41,7 @@
 					class="tooltipped tooltipped-n tooltipped-no-touch"
 					aria-label="Settings"><button
 						class="icon settings"
-						data-target="#settings"
+						data-target="Settings"
 						aria-label="Settings"
 						role="tab"
 						aria-controls="settings"
@@ -50,7 +50,7 @@
 					class="tooltipped tooltipped-n tooltipped-no-touch"
 					aria-label="Help"><button
 						class="icon help"
-						data-target="#help"
+						data-target="Help"
 						aria-label="Help"
 						role="tab"
 						aria-controls="help"
@@ -76,6 +76,7 @@ const throttle = require("lodash/throttle");
 import NetworkList from "./NetworkList.vue";
 import Chat from "./Chat.vue";
 import SignIn from "./Windows/SignIn.vue";
+import Settings from "./Windows/Settings.vue";
 
 export default {
 	name: "App",
@@ -83,6 +84,7 @@ export default {
 		NetworkList,
 		Chat,
 		SignIn,
+		Settings,
 	},
 	props: {
 		activeWindow: String,
